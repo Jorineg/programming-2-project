@@ -1,0 +1,30 @@
+<html>
+
+<head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"
+      integrity="sha512-0zGLOFv/+OQ6YfVCSGDQWhrDRx0ONmBqWvs3gI4olm8i6xtKoG1FhEnB4eTaWCVnojyfUDgE8Izeln+mAJAkFA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="script.js"></script>
+</head>
+
+<body>
+   <div style="display: flex;">
+      <main></main>
+      <div id="chart-container">
+         <canvas id="myPieChart" width="200" height="200"></canvas>
+         <div style="display: flex; flex-direction: column;">
+            <button onclick="lightning()">Lightning</button>
+            <button onclick="rain()">Toggle Season</button>
+            <button onclick="spawnGrassEater()">Spawn Grass Eater</button>
+            <button onclick="spawnPredator()">Spawn Predator</button>
+            <button onclick="spawnGrass()">Spawn Grass</button>
+         </div>
+      </div>
+   </div>
+   <!-- hier können noch ein paar Informationen stehen
+   oder verschiedene buttons oder so -->
+</body>
+
+</html>
